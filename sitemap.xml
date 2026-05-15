@@ -46,9 +46,54 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.depannage.astorya.fr/blog/index.html</loc>
+    <loc>https://www.depannage.astorya.fr/blog/</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/rancongiciels-loire-atlantique-2026.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/standard-cloud-voip-saint-nazaire.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/pra-equipementier-aeronautique-montoir.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/choisir-prestataire-infogerance-saint-nazaire.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/rgpd-pme-saint-nazaire-auto-evaluation.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/sauvegarder-microsoft-365.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/sous-traitants-industriels-cybersecurite.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/fibre-pro-saint-nazaire-ftth-ftto.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/blog/renouveler-parc-informatique-budget.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.depannage.astorya.fr/mentions-legales.html</loc>
