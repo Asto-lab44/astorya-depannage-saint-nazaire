@@ -1,0 +1,9 @@
+# macOS / Linux / Windows (avec Git Bash)
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+*.log
+.env
+.env.local
+.vercel
