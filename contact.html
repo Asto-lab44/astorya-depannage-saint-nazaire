@@ -31,6 +31,8 @@
   gtag('js', new Date());
   gtag('config', 'G-TQKM8L89VD');
 </script>
+<!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 <div class="top-bar">
@@ -110,7 +112,13 @@
       <div class="contact-form">
         <h2 style="margin-bottom:8px;">Être rappelé sous 2h</h2>
         <p style="color:var(--muted);margin-bottom:24px;">Réponse sous 2 heures ouvrées, par un humain de notre équipe.</p>
-        <form onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='block'; this.querySelector('button').style.display='none';">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms : access_key à remplacer par la clé reçue par e-mail après inscription sur https://web3forms.com -->
+          <input type="hidden" name="access_key" value="041bdbca-1ba7-4e64-b9a0-c4d145968647">
+          <input type="hidden" name="subject" value="Nouvelle demande de contact — depannage.astorya.fr">
+          <input type="hidden" name="from_name" value="Site Astorya Saint-Nazaire">
+          <!-- Honeypot anti-bot (rester vide côté humain) -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-row two">
             <div><label for="nom">Nom</label><input id="nom" name="nom" type="text" required></div>
             <div><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" required></div>
@@ -147,12 +155,55 @@
             <label for="message">Message (optionnel)</label>
             <textarea id="message" name="message" placeholder="Décrivez votre besoin en quelques mots…"></textarea>
           </div>
+          <!-- Cloudflare Turnstile : data-sitekey à remplacer par la Site Key obtenue sur le dashboard Cloudflare -->
+          <div class="form-row">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADP9c-shr6wf7ILC" data-theme="light" data-language="fr"></div>
+          </div>
           <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;">Envoyer ma demande <span class="arrow"></span></button>
           <div class="form-success" style="display:none;margin-top:18px;padding:16px;background:#E8F4EC;border-radius:10px;color:var(--success);font-weight:600;">
             ✓ Merci, nous vous rappelons sous 2 heures ouvrées.
           </div>
+          <div class="form-error" style="display:none;margin-top:18px;padding:16px;background:#FCEBEA;border-radius:10px;color:#B42318;font-weight:600;">
+            Une erreur est survenue. Merci de réessayer ou de nous appeler au 02 40 00 80 00.
+          </div>
           <p style="font-size:0.78rem;color:var(--muted);margin-top:14px;margin-bottom:0;">Vos données sont utilisées uniquement pour traiter votre demande, conformément à notre politique RGPD.</p>
         </form>
+        <script>
+          (function(){
+            var form = document.getElementById('contact-form');
+            if(!form) return;
+            form.addEventListener('submit', function(e){
+              e.preventDefault();
+              var btn = form.querySelector('button[type=submit]');
+              var ok = form.querySelector('.form-success');
+              var ko = form.querySelector('.form-error');
+              ok.style.display = 'none';
+              ko.style.display = 'none';
+              btn.disabled = true;
+              btn.textContent = 'Envoi…';
+              fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+              }).then(function(r){ return r.json(); })
+              .then(function(data){
+                if(data && data.success){
+                  ok.style.display = 'block';
+                  btn.style.display = 'none';
+                  form.reset();
+                } else {
+                  ko.style.display = 'block';
+                  btn.disabled = false;
+                  btn.innerHTML = 'Envoyer ma demande <span class="arrow"></span>';
+                }
+              }).catch(function(){
+                ko.style.display = 'block';
+                btn.disabled = false;
+                btn.innerHTML = 'Envoyer ma demande <span class="arrow"></span>';
+              });
+            });
+          })();
+        </script>
       </div>
       <div class="contact-info">
         <h2 style="margin-bottom:24px;">Nos coordonnées</h2>
