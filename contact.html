@@ -31,8 +31,6 @@
   gtag('js', new Date());
   gtag('config', 'G-TQKM8L89VD');
 </script>
-<!-- hCaptcha -->
-<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
 <div class="top-bar">
@@ -155,10 +153,6 @@
             <label for="message">Message (optionnel)</label>
             <textarea id="message" name="message" placeholder="Décrivez votre besoin en quelques mots…"></textarea>
           </div>
-          <!-- hCaptcha : data-sitekey à remplacer par la Site Key obtenue sur https://dashboard.hcaptcha.com -->
-          <div class="form-row">
-            <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2" data-theme="light"></div>
-          </div>
           <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;">Envoyer ma demande <span class="arrow"></span></button>
           <div class="form-success" style="display:none;margin-top:18px;padding:16px;background:#E8F4EC;border-radius:10px;color:var(--success);font-weight:600;">
             ✓ Merci, nous vous rappelons sous 2 heures ouvrées.
@@ -179,13 +173,6 @@
               var ko = form.querySelector('.form-error');
               ok.style.display = 'none';
               ko.style.display = 'none';
-              // Vérifier que hCaptcha est validé côté client
-              var captchaToken = form.querySelector('[name="h-captcha-response"]');
-              if(!captchaToken || !captchaToken.value){
-                ko.textContent = 'Merci de valider le captcha avant d’envoyer.';
-                ko.style.display = 'block';
-                return;
-              }
               btn.disabled = true;
               btn.textContent = 'Envoi…';
               fetch(form.action, {
@@ -199,7 +186,6 @@
                   ok.style.display = 'block';
                   btn.style.display = 'none';
                   form.reset();
-                  if(window.hcaptcha){ try{ window.hcaptcha.reset(); }catch(_){} }
                 } else {
                   var msg = (res.body && res.body.message) ? res.body.message : 'Une erreur est survenue.';
                   ko.textContent = msg + ' Si le problème persiste, appelez le 02 40 00 80 00.';
