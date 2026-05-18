@@ -36,6 +36,21 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://www.depannage.astorya.fr/partenaires.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/etudes-de-cas.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/presse.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://www.depannage.astorya.fr/zones-intervention.html</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
