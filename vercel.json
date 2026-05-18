@@ -12,6 +12,16 @@
       "source": "/saint-nazaire/:path*",
       "destination": "/:path*",
       "permanent": true
+    },
+    {
+      "source": "/societe-informatique-ancenis",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/societe-informatique-ancenis.html",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [

@@ -6,6 +6,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.depannage.astorya.fr/services.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://www.depannage.astorya.fr/services/infogerance-maintenance-informatique-saint-nazaire.html</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>

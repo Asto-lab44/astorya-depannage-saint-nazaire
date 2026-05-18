@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1B3A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80, 80)">
+    <rect width="120" height="120" rx="22" fill="#3B82F6"/>
+    <text x="60" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="78" font-weight="800" fill="#fff" text-anchor="middle">A</text>
+  </g>
+  <text x="80" y="290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="800" fill="#fff">Astorya</text>
+  <text x="80" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="40" font-weight="600" fill="#93C5FD">Entreprise informatique</text>
+  <text x="80" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="40" font-weight="600" fill="#93C5FD">à Saint-Nazaire</text>
+  <line x1="80" y1="480" x2="320" y2="480" stroke="#3B82F6" stroke-width="4"/>
+  <text x="80" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="400" fill="#CBD5E1">Infogérance · Cybersécurité · Cloud · Téléphonie</text>
+  <text x="80" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="500" fill="#94A3B8">Intervention sous 4h · depuis 2010</text>
+  <text x="1120" y="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#60A5FA" text-anchor="end">depannage.astorya.fr</text>
+</svg>
