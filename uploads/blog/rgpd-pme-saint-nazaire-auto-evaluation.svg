@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#78350F"/>
+    <stop offset="100%" stop-color="#92400E"/>
+  </linearGradient>
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#93C5FD" opacity="0.18"/>
+  </pattern>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/>
+<rect width="600" height="400" fill="url(#dots)"/>
+<g transform="translate(30,30)">
+<rect width="80" height="32" rx="16" fill="#F59E0B" opacity="0.9"/>
+<text x="40" y="21" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">RGPD</text>
+</g>
+<g transform="translate(300,210)">
+  <!-- doc -->
+  <rect x="-80" y="-100" width="160" height="200" rx="8" fill="#fff"/>
+  <line x1="-55" y1="-65" x2="55" y2="-65" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="-55" y1="-40" x2="40" y2="-40" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="-55" y1="-15" x2="55" y2="-15" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="-55" y1="10" x2="30" y2="10" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <!-- cadenas en bas -->
+  <g transform="translate(0,55)">
+    <rect x="-18" y="0" width="36" height="30" rx="4" fill="#F59E0B"/>
+    <path d="M -10,0 L -10,-12 Q -10,-22 0,-22 Q 10,-22 10,-12 L 10,0" fill="none" stroke="#F59E0B" stroke-width="4"/>
+    <circle cx="0" cy="14" r="3.5" fill="#fff"/>
+  </g>
+</g>
+</svg>
