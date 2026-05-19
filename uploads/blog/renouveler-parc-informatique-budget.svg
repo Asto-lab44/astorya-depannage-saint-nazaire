@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#831843"/>
+    <stop offset="100%" stop-color="#9D174D"/>
+  </linearGradient>
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#93C5FD" opacity="0.18"/>
+  </pattern>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/>
+<rect width="600" height="400" fill="url(#dots)"/>
+<g transform="translate(30,30)">
+<rect width="94" height="32" rx="16" fill="#EC4899" opacity="0.9"/>
+<text x="47" y="21" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">CONSEILS</text>
+</g>
+<g transform="translate(300,210)">
+  <!-- laptop -->
+  <g transform="translate(0,-40)">
+    <rect x="-70" y="-50" width="140" height="90" rx="6" fill="#fff"/>
+    <rect x="-65" y="-45" width="130" height="80" fill="#0B1B3A"/>
+    <line x1="-50" y1="-25" x2="40" y2="-25" stroke="#3B82F6" stroke-width="3"/>
+    <line x1="-50" y1="-10" x2="20" y2="-10" stroke="#94A3B8" stroke-width="3"/>
+    <line x1="-50" y1="5" x2="30" y2="5" stroke="#94A3B8" stroke-width="3"/>
+    <line x1="-50" y1="20" x2="10" y2="20" stroke="#94A3B8" stroke-width="3"/>
+    <rect x="-85" y="40" width="170" height="10" rx="3" fill="#fff"/>
+  </g>
+  <!-- euro et flèche -->
+  <g transform="translate(0,90)">
+    <circle cx="0" cy="0" r="32" fill="#FBBF24"/>
+    <text x="0" y="11" font-family="system-ui,sans-serif" font-size="40" font-weight="800" fill="#0B1B3A" text-anchor="middle">€</text>
+  </g>
+</g>
+</svg>

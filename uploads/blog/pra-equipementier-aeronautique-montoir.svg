@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1E1B4B"/>
+    <stop offset="100%" stop-color="#312E81"/>
+  </linearGradient>
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#93C5FD" opacity="0.18"/>
+  </pattern>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/>
+<rect width="600" height="400" fill="url(#dots)"/>
+<g transform="translate(30,30)">
+<rect width="126" height="32" rx="16" fill="#8B5CF6" opacity="0.9"/>
+<text x="63" y="21" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">ÉTUDE DE CAS</text>
+</g>
+<g transform="translate(300,210)">
+  <!-- avion -->
+  <g transform="rotate(-15)" fill="#fff">
+    <polygon points="-120,0 60,-15 80,0 60,15"/>
+    <polygon points="-80,-40 -40,-10 -10,-10"/>
+    <polygon points="-80,40 -40,10 -10,10"/>
+    <polygon points="60,-30 80,-15 60,-5"/>
+    <polygon points="60,30 80,15 60,5"/>
+  </g>
+  <!-- nuage de sauvegarde sous l'avion -->
+  <g transform="translate(0,90)">
+    <path d="M -50,0 Q -50,-25 -25,-25 Q -20,-50 10,-45 Q 40,-50 45,-25 Q 70,-25 70,0 Q 70,20 50,20 L -30,20 Q -50,20 -50,0 Z" fill="#fff" opacity="0.7"/>
+    <path d="M 10,-5 L 10,15 M 0,5 L 10,15 L 20,5" stroke="#0B1B3A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+</svg>
