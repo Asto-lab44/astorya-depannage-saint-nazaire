@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0078D4"/>
+    <stop offset="100%" stop-color="#005A9E"/>
+  </linearGradient>
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#93C5FD" opacity="0.18"/>
+  </pattern>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/>
+<rect width="600" height="400" fill="url(#dots)"/>
+<g transform="translate(30,30)">
+  <rect width="160" height="32" rx="16" fill="#0078D4" opacity="0.95"/>
+  <text x="80" y="21" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0.5">MICROSOFT 365</text>
+</g>
+<g transform="translate(300,200)">
+  <!-- 4 carrés Microsoft agrandis -->
+  <g transform="translate(-60,-60)">
+    <rect x="0" y="0" width="50" height="50" fill="#F25022"/>
+    <rect x="60" y="0" width="50" height="50" fill="#7FBA00"/>
+    <rect x="0" y="60" width="50" height="50" fill="#00A4EF"/>
+    <rect x="60" y="60" width="50" height="50" fill="#FFB900"/>
+  </g>
+  <!-- couronne ou étoile premium -->
+  <g transform="translate(80,-100)">
+    <circle cx="0" cy="0" r="22" fill="#FBBF24"/>
+    <polygon points="0,-12 3,-4 12,-4 5,2 8,11 0,6 -8,11 -5,2 -12,-4 -3,-4" fill="#0B1B3A"/>
+  </g>
+</g>
+<text x="300" y="350" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">Business Premium pour PME</text>
+</svg>
