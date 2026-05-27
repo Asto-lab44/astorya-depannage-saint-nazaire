@@ -10,7 +10,7 @@ Cadence : **2 articles par mois** (1er et 3ème lundi).
 
 | # | Mois | Article | Mot-clé principal | Persona ciblé | Service à promouvoir |
 |---|---|---|---|---|---|
-| 1 | Juin 2026 | Microsoft 365 Business Premium : tout ce qu'il faut savoir en PME nazairienne | Microsoft 365 Saint-Nazaire | Dirigeant PME | Cloud & sauvegarde |
+| 1 | Juin 2026 | ✅ [Microsoft 365 Business Premium en PME nazairienne : tout ce qu'il faut savoir](blog/microsoft-365-business-premium-pme-saint-nazaire.html) — **PUBLIÉ** | Microsoft 365 Saint-Nazaire | Dirigeant PME | Cloud & sauvegarde |
 | 2 | Juin 2026 | Audit cybersécurité PME : ce que regarde vraiment un auditeur | audit cybersécurité PME | DAF / Dirigeant | Cybersécurité |
 | 3 | Juillet 2026 | Télétravail sécurisé : 7 erreurs à ne pas commettre cet été | télétravail sécurisé PME | RH / IT | Cybersécurité + Cloud |
 | 4 | Juillet 2026 | Loi NIS2 : c'est maintenant pour les sous-traitants industriels | NIS2 sous-traitant industriel | Dirigeant industriel | Cybersécurité |
