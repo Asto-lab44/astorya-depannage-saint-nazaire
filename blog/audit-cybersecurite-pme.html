@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit cybersécurité PME : ce que regarde l'auditeur — Astorya</title>
+<meta name="keywords" content="audit cybersécurité PME, check-list audit cyber, NIS2 audit, exigences donneur d'ordres, audit sécurité informatique, préparer audit cyber">
+<meta name="description" content="MFA, sauvegardes, Active Directory, pare-feu : la check-list complète de ce qu'un auditeur cybersécurité contrôle dans une PME, et comment vous y préparer.">
+<link rel="canonical" href="https://www.depannage.astorya.fr/blog/audit-cybersecurite-pme">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Audit cybersécurité PME : ce que regarde l'auditeur — Astorya">
+<meta property="og:description" content="MFA, sauvegardes, Active Directory, pare-feu : la check-list complète de ce qu'un auditeur cybersécurité contrôle dans une PME, et comment vous y préparer.">
+<meta property="og:image" content="https://www.depannage.astorya.fr/og-image.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Astorya — Entreprise informatique à Saint-Nazaire">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Astorya — Entreprise informatique à Saint-Nazaire">
+<meta name="twitter:description" content="Dépannage, infogérance, cybersécurité pour PME du bassin nazairien. Intervention sous 4h.">
+<meta name="twitter:image" content="https://www.depannage.astorya.fr/og-image.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.depannage.astorya.fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.depannage.astorya.fr/blog"},{"@type":"ListItem","position":3,"name":"Audit cybersécurité PME","item":"https://www.depannage.astorya.fr/blog/audit-cybersecurite-pme"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Audit cybersécurité PME : ce que regarde vraiment un auditeur","datePublished":"2026-07-01","dateModified":"2026-07-01","author":{"@type":"Organization","name":"Astorya"},"publisher":{"@type":"Organization","name":"Astorya","logo":{"@type":"ImageObject","url":"https://www.depannage.astorya.fr/og-image.svg"}},"image":"https://www.depannage.astorya.fr/uploads/blog/audit-cybersecurite-pme.svg","description":"MFA, sauvegardes, Active Directory, pare-feu : la check-list complète de ce qu'un auditeur cybersécurité contrôle dans une PME, et comment vous y préparer.","mainEntityOfPage":"https://www.depannage.astorya.fr/blog/audit-cybersecurite-pme"}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQKM8L89VD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TQKM8L89VD');
+</script>
+<style>
+.audit-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
+.audit-table th, .audit-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #E5E7EB; }
+.audit-table th { background: #F8FAFC; color: var(--navy); font-weight: 700; }
+.audit-table td.price { font-weight: 700; color: var(--navy); white-space: nowrap; }
+</style>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0B1B3A">
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-info">
+      <a href="tel:+33240008000" class="top-bar-item top-bar-phone">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        02 40 00 80 00
+      </a>
+      <span class="top-bar-item">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <strong>Lun–Jeu</strong> 8h30–12h30 · 14h00–18h00 <span class="top-bar-hours-detail">— Vendredi jusqu'à 17h00</span>
+      </span>
+    </div>
+    <span class="top-bar-item" style="font-size:0.78rem;">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+      Saint-Nazaire &amp; bassin nazairien
+    </span>
+  </div>
+</div>
+<header class="site-header">
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="../" class="brand">
+      <span class="brand-mark"><span>A</span></span>
+      Astorya
+      <span class="brand-sub">Saint-Nazaire</span>
+    </a>
+    <div class="nav-links">
+      <details>
+        <summary>Services</summary>
+        <div class="nav-dropdown">
+          <a href="../services/infogerance-maintenance-informatique-saint-nazaire">Dépannage &amp; infogérance<small>Intervention sous 4h, support illimité</small></a>
+          <a href="../services/cybersecurite-saint-nazaire">Cybersécurité<small>Pare-feu, EDR, sensibilisation, audit</small></a>
+          <a href="../services/cloud-sauvegarde-saint-nazaire">Cloud &amp; sauvegarde<small>Hébergement, Microsoft 365, PRA</small></a>
+          <a href="../services/telephonie-fibre-saint-nazaire">Téléphonie VOIP &amp; fibre<small>Standard cloud, fibre pro</small></a>
+          <a href="../services/audit-conseil-informatique-saint-nazaire">Audit &amp; conseil IT<small>Schéma directeur, RGPD, DSI à temps partagé</small></a>
+        </div>
+      </details>
+      <a href="../services">Services</a>
+      <a href="../zones-intervention">Zone d'intervention</a>
+      <a href="../a-propos">À propos</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="../contact">Contact</a>
+    </div>
+    <a href="../contact" class="nav-cta">Être rappelé sous 2h</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+<a href="../">Accueil</a> <span>›</span>
+<a href="/blog">Blog</a> <span>›</span>
+<span>Audit cybersécurité PME</span>
+</div>
+    <h1>Audit cybersécurité PME : ce que regarde vraiment un auditeur</h1>
+    <p class="lead">Cybersécurité · 5 min de lecture · Juillet 2026 — Questionnaire d'un donneur d'ordres, exigence d'un assureur, préparation NIS2 : la check-list détaillée des points contrôlés lors d'un audit cyber, et comment vous y préparer sans stress.</p>
+  </div>
+</section>
+
+<section class="section section--paper" style="padding-top:0;">
+  <div class="container" style="max-width:780px;">
+    <img src="/uploads/blog/audit-cybersecurite-pme.svg" alt="Audit cybersécurité PME : la check-list de l'auditeur" class="post-hero-img" loading="eager" style="width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:14px;margin-top:-20px;">
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <article class="prose" style="max-width:780px;margin:0 auto;">
+
+      <p>« On a reçu un questionnaire de sécurité de notre donneur d'ordres, il faut répondre avant la fin du mois. » C'est probablement la phrase que nous entendons le plus souvent au téléphone depuis un an. L'audit cybersécurité n'est plus réservé aux grands groupes : les PME du bassin nazairien y sont désormais confrontées, qu'elles le veuillent ou non. Voici concrètement ce qu'un auditeur contrôle, les écarts qu'on retrouve partout, et comment transformer cet exercice imposé en avantage commercial.</p>
+
+      <h2>Pourquoi votre PME va (probablement) être auditée</h2>
+
+      <p>Trois forces poussent aujourd'hui les PME vers l'audit cybersécurité :</p>
+
+      <ul>
+        <li><strong>Les donneurs d'ordres.</strong> Sur le bassin de Saint-Nazaire, les Chantiers de l'Atlantique, Airbus Atlantic et leurs rangs 1 diffusent des questionnaires de sécurité à toute leur chaîne de sous-traitance. Pas de réponse satisfaisante, pas de renouvellement de contrat. Nous en avons parlé en détail dans notre article sur <a href="sous-traitants-industriels-cybersecurite">la mise à niveau cyber des sous-traitants industriels</a>.</li>
+        <li><strong>La directive NIS2.</strong> Transposée en droit français, elle étend les obligations de sécurité à des milliers d'entreprises qui n'étaient pas concernées par NIS1 — y compris, par effet de cascade, leurs fournisseurs. L'audit devient le moyen de prouver sa conformité.</li>
+        <li><strong>Les assureurs cyber.</strong> Plus aucune police cyber sérieuse ne se souscrit sans questionnaire technique préalable. MFA absent ou sauvegardes non testées = surprime, exclusions de garantie, voire refus pur et simple.</li>
+      </ul>
+
+      <h2>La check-list de l'audit cybersécurité : 7 domaines passés au crible</h2>
+
+      <p>Que l'audit soit mené selon le référentiel de l'<a href="https://cyber.gouv.fr/le-guide-dhygiene-informatique" rel="noopener" target="_blank">guide d'hygiène informatique de l'ANSSI</a>, un questionnaire donneur d'ordres ou une préparation ISO 27001, les points contrôlés sont remarquablement constants. Les voici, dans l'ordre où un auditeur les examine généralement.</p>
+
+      <h3>1. Identités et accès</h3>
+      <p>Le premier réflexe de l'auditeur : la liste des comptes. Qui a des droits d'administrateur ? Les comptes des salariés partis sont-ils désactivés ? Le MFA (authentification multifacteur) est-il activé partout — messagerie, VPN, outils cloud ? Y a-t-il des comptes génériques partagés (« accueil », « atelier ») ? C'est le domaine qui concentre le plus de non-conformités.</p>
+
+      <h3>2. Postes de travail et serveurs</h3>
+      <p>Inventaire du parc, versions des systèmes d'exploitation (les postes Windows 10 non migrés sont immédiatement relevés), politique de mises à jour, présence d'un EDR — pas un simple antivirus — sur chaque machine, chiffrement des disques des portables.</p>
+
+      <h3>3. Réseau</h3>
+      <p>Pare-feu à jour et supervisé, segmentation (le Wi-Fi invité est-il séparé du réseau de production ? les machines industrielles sont-elles isolées ?), accès distants sécurisés, ports exposés sur Internet. Un scan externe de vos adresses IP publiques fait presque toujours partie de l'exercice.</p>
+
+      <h3>4. Sauvegardes</h3>
+      <p>Le sujet préféré des auditeurs depuis la vague de rançongiciels. Règle 3-2-1 respectée ? Une copie hors ligne ou immuable ? Et surtout : <strong>quand avez-vous testé une restauration complète pour la dernière fois ?</strong> Une sauvegarde jamais restaurée n'est pas une sauvegarde, c'est un espoir.</p>
+
+      <h3>5. Le facteur humain</h3>
+      <p>Sensibilisation des équipes au phishing (avec preuves : campagnes de faux phishing, sessions de formation datées), charte informatique signée, procédure de signalement d'un mail suspect. L'auditeur interroge souvent un ou deux collaborateurs au hasard — c'est là que tout se voit.</p>
+
+      <h3>6. Procédures et continuité d'activité</h3>
+      <p>Existe-t-il une procédure écrite en cas d'incident ? Un PRA (plan de reprise d'activité) documenté et testé ? Qui appelle-t-on à 6h du matin quand plus rien ne démarre ? Les PME qui répondent « c'est dans la tête de notre prestataire » perdent des points.</p>
+
+      <h3>7. Conformité RGPD</h3>
+      <p>Registre des traitements, gestion des durées de conservation, contrats de sous-traitance (article 28) avec vos prestataires IT et cloud. Faites le point avec notre <a href="rgpd-pme-saint-nazaire-auto-evaluation">auto-évaluation RGPD en 10 questions</a>.</p>
+
+      <h2>Les 5 écarts qu'on retrouve dans 9 audits cyber sur 10</h2>
+
+      <p>Sur les audits que nous menons en Loire-Atlantique, cinq non-conformités reviennent presque systématiquement :</p>
+
+      <ol>
+        <li><strong>MFA absent ou partiel</strong> — activé sur la messagerie mais pas sur le VPN, ou l'inverse ;</li>
+        <li><strong>Comptes administrateurs surnuméraires</strong> — d'anciens prestataires ou salariés encore actifs dans l'Active Directory ;</li>
+        <li><strong>Sauvegardes jamais testées</strong> — le job tourne, personne n'a jamais vérifié qu'il produit quelque chose d'exploitable ;</li>
+        <li><strong>Parc obsolète</strong> — postes hors support, firmwares de pare-feu jamais mis à jour ;</li>
+        <li><strong>Aucune procédure d'incident écrite</strong> — la gestion de crise repose sur une seule personne, souvent injoignable en août.</li>
+      </ol>
+
+      <p>La bonne nouvelle : ces cinq écarts se corrigent vite. La plupart de nos clients passent de « préoccupant » à « conforme » en un à trois mois de plan d'action, sans investissement massif. Les protections décrites dans notre article sur <a href="rancongiciels-loire-atlantique-2026">les rançongiciels en Loire-Atlantique</a> couvrent déjà l'essentiel.</p>
+
+      <h2>Comment se préparer à un audit cybersécurité</h2>
+
+      <p>Si un questionnaire ou un audit s'annonce, ne foncez pas tête baissée dans les réponses. Notre conseil, appliqué chez nos clients sous-traitants :</p>
+
+      <ol>
+        <li><strong>Faites d'abord un pré-audit interne</strong> (ou avec votre prestataire) sur les 7 domaines ci-dessus. Mieux vaut découvrir les écarts vous-même que les voir écrits dans un rapport transmis à votre donneur d'ordres.</li>
+        <li><strong>Traitez les quick wins avant l'échéance</strong> : activer le MFA, désactiver les comptes dormants, tester une restauration — trois actions à fort impact réalisables en quelques jours.</li>
+        <li><strong>Documentez ce qui existe déjà.</strong> Beaucoup de PME font mieux qu'elles ne le croient, mais rien n'est écrit. Un auditeur ne peut valider que ce qui est prouvable.</li>
+        <li><strong>Répondez honnêtement.</strong> Un « non, prévu au T4 2026 » avec un plan d'action daté vaut mieux qu'un « oui » de complaisance qui sera démonté au premier contrôle sur site.</li>
+      </ol>
+
+      <p>Bien préparé, l'audit devient un argument commercial : vous êtes le sous-traitant qui répond au questionnaire en trois jours avec des preuves, pendant que vos concurrents demandent un délai.</p>
+
+      <h2>Combien coûte un audit cybersécurité pour une PME ?</h2>
+
+      <table class="audit-table">
+        <thead>
+          <tr>
+            <th>Prestation</th>
+            <th>Contenu</th>
+            <th>Budget indicatif</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Pré-audit flash</td><td>1/2 à 1 journée, les 7 domaines, rapport synthétique</td><td class="price">800 – 2 000 € HT</td></tr>
+          <tr><td>Audit complet</td><td>2 à 5 jours, entretiens, scans, plan d'action priorisé</td><td class="price">2 500 – 8 000 € HT</td></tr>
+          <tr><td>Test d'intrusion (pentest)</td><td>Attaque simulée externe et/ou interne</td><td class="price">4 000 – 15 000 € HT</td></tr>
+        </tbody>
+      </table>
+
+      <p style="font-size:0.85rem;color:var(--muted);"><em>Fourchettes constatées pour des PME de 10 à 100 postes en Pays de la Loire, juillet 2026. Le pentest n'est pertinent qu'une fois les fondamentaux en place.</em></p>
+
+      <div class="callout">
+        <p><strong>Audit cybersécurité gratuit Astorya :</strong> 1 heure sur site à Saint-Nazaire ou dans le bassin nazairien. Nous passons en revue les 7 domaines de cet article et vous repartez avec une première photographie de votre exposition, sans engagement. Appelez le <a href="tel:+33240008000">02 40 00 80 00</a> ou <a href="../contact">demandez à être rappelé</a>.</p>
+      </div>
+
+      <h2>En résumé</h2>
+
+      <p>Un audit cybersécurité n'a rien d'une inspection surprise : les points contrôlés sont connus, constants et documentés — identités, postes, réseau, sauvegardes, humain, procédures, RGPD. Une PME qui traite les cinq écarts classiques (MFA, comptes dormants, restauration testée, parc à jour, procédure d'incident) aborde n'importe quel questionnaire donneur d'ordres ou exigence NIS2 avec sérénité.</p>
+
+      <p>Ne subissez pas l'échéance : anticipez-la. Notre équipe <a href="../services/cybersecurite-saint-nazaire">cybersécurité</a> réalise le pré-audit, corrige les écarts et vous accompagne dans les réponses aux questionnaires, et notre offre <a href="../services/audit-conseil-informatique-saint-nazaire">audit &amp; conseil IT</a> prend le relais pour le schéma directeur et la mise en conformité dans la durée.</p>
+
+      <p style="margin-top:32px;"><a href="../services/cybersecurite-saint-nazaire" class="btn btn-primary">Voir notre offre cybersécurité</a> &nbsp; <a href="../contact" class="btn btn-ghost">Demander l'audit gratuit 1h</a></p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section--paper section--tight">
+  <div class="container">
+    <div class="cta-strip">
+      <div>
+        <h2>Un questionnaire de sécurité à remplir&nbsp;?</h2>
+        <p>Audit cybersécurité gratuit d'1h sur site : les 7 domaines passés en revue, une photographie claire de votre exposition. Sans engagement.</p>
+      </div>
+      <div class="cta-strip-actions">
+        <a href="../contact" class="btn btn-primary">Être rappelé sous 2h</a>
+        <a href="tel:+33240008000" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);">02 40 00 80 00</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="../" class="brand" style="color:#fff;">
+          <span class="brand-mark"><span>A</span></span>
+          Astorya
+        </a>
+        <p>Votre société informatique de proximité à Saint-Nazaire et dans tout le bassin ligérien depuis 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="../services/infogerance-maintenance-informatique-saint-nazaire">Dépannage &amp; infogérance</a>
+        <a href="../services/cybersecurite-saint-nazaire">Cybersécurité</a>
+        <a href="../services/cloud-sauvegarde-saint-nazaire">Cloud &amp; sauvegarde</a>
+        <a href="../services/telephonie-fibre-saint-nazaire">Téléphonie &amp; fibre</a>
+        <a href="../services/audit-conseil-informatique-saint-nazaire">Audit &amp; conseil</a>
+      </div>
+      <div class="footer-col">
+        <h4>Astorya</h4>
+        <a href="../a-propos">À propos</a>
+        <a href="/">Nos partenaires</a>
+        <a href="/">Études de cas</a>
+        <a href="/">Presse</a>
+        <a href="../zones-intervention">Zone d'intervention</a>
+        <a href="/blog">Blog</a>
+        <a href="../contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p style="color:#fff;margin:0 0 10px;font-size:0.92rem;line-height:1.5;">24 Allée de la Mer d'Iroise<br>44600 Saint-Nazaire</p>
+        <a href="tel:+33240008000">02 40 00 80 00</a>
+        <a href="mailto:contact@astorya.fr">contact@astorya.fr</a>
+        <a href="../contact">Demander un rappel</a>
+        <p style="color:#8A95A8;font-size:0.85rem;margin-top:12px;">Lun–Jeu&nbsp;: 8h30–12h30 · 14h–18h<br>Ven&nbsp;: 8h30–12h30 · 14h–17h00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2010–2026 Astorya — SGI Solution Globale Informatique</span>
+      <div style="display:flex;gap:20px;">
+        <a href="../mentions-legales" style="color:#8A95A8;">Mentions légales</a>
+        <a href="../mentions-legales" style="color:#8A95A8;">Politique de confidentialité</a>
+        <a href="../mentions-legales" style="color:#8A95A8;">RGPD</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../chatbot.js" defer></script>
+</body>
+</html>
