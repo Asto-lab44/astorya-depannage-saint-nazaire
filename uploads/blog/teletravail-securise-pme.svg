@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0E7490"/>
+    <stop offset="100%" stop-color="#155E75"/>
+  </linearGradient>
+  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#A5F3FC" opacity="0.18"/>
+  </pattern>
+</defs>
+<rect width="600" height="400" fill="url(#bg)"/>
+<rect width="600" height="400" fill="url(#dots)"/>
+<g transform="translate(30,30)">
+  <rect width="220" height="32" rx="16" fill="#FBBF24" opacity="0.95"/>
+  <text x="110" y="21" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#0B1B3A" text-anchor="middle" letter-spacing="0.5">TÉLÉTRAVAIL SÉCURISÉ</text>
+</g>
+<!-- soleil -->
+<g transform="translate(510,80)">
+  <circle cx="0" cy="0" r="26" fill="#FBBF24"/>
+  <g stroke="#FBBF24" stroke-width="5" stroke-linecap="round">
+    <line x1="0" y1="-40" x2="0" y2="-52"/>
+    <line x1="0" y1="40" x2="0" y2="52"/>
+    <line x1="-40" y1="0" x2="-52" y2="0"/>
+    <line x1="40" y1="0" x2="52" y2="0"/>
+    <line x1="-29" y1="-29" x2="-37" y2="-37"/>
+    <line x1="29" y1="29" x2="37" y2="37"/>
+    <line x1="-29" y1="29" x2="-37" y2="37"/>
+    <line x1="29" y1="-29" x2="37" y2="-37"/>
+  </g>
+</g>
+<!-- laptop -->
+<g transform="translate(255,215)">
+  <rect x="-110" y="-75" width="220" height="140" rx="10" fill="#0B1B3A"/>
+  <rect x="-98" y="-63" width="196" height="116" rx="4" fill="#F8FAFC"/>
+  <path d="M-130,65 L130,65 L112,88 L-112,88 Z" fill="#334155"/>
+  <!-- écran : cadenas -->
+  <g transform="translate(0,-5)">
+    <rect x="-26" y="-8" width="52" height="42" rx="8" fill="#0E7490"/>
+    <path d="M-15,-8 v-12 a15,15 0 0 1 30,0 v12" fill="none" stroke="#0E7490" stroke-width="9"/>
+    <circle cx="0" cy="10" r="6" fill="#F8FAFC"/>
+    <rect x="-2.5" y="10" width="5" height="12" rx="2.5" fill="#F8FAFC"/>
+  </g>
+</g>
+<!-- ondes wifi + bouclier -->
+<g transform="translate(455,240)">
+  <g stroke="#A5F3FC" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M-38,-32 a54,54 0 0 1 76,0"/>
+    <path d="M-24,-16 a34,34 0 0 1 48,0"/>
+  </g>
+  <circle cx="0" cy="2" r="7" fill="#A5F3FC"/>
+  <g transform="translate(48,44)">
+    <path d="M0,-34 L28,-24 L28,4 C28,23 15,35 0,41 C-15,35 -28,23 -28,4 L-28,-24 Z" fill="#10B981"/>
+    <path d="M-11,2 L-3,10 L13,-8" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+<text x="300" y="368" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">7 erreurs à ne pas commettre cet été</text>
+</svg>
