@@ -1161,3 +1161,6 @@ li { margin-bottom: 0.4em; }
 .greview-top small { color: var(--muted); font-size: 0.8rem; }
 .greview-glogo { margin-left: auto; width: 20px; height: 20px; flex: none; }
 .greview p { font-size: 0.92rem; color: var(--ink); line-height: 1.55; margin: 0; }
+
+/* ===== Vignettes blog (image réelle des articles) ===== */
+.post-thumb-img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; border-top-left-radius: 14px; border-top-right-radius: 14px; }
