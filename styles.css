@@ -1293,3 +1293,7 @@ li { margin-bottom: 0.4em; }
 
 /* ===== Vignettes blog (image réelle des articles) ===== */
 .post-thumb-img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; border-top-left-radius: 14px; border-top-right-radius: 14px; }
+
+/* ===== Badge disponibilité : état fermé ===== */
+.hero-eyebrow.is-closed .dot { background: #D04545; }
+.hero-eyebrow.is-closed .dot::after { background: #D04545; }
