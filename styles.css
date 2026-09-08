@@ -1177,21 +1177,3 @@ li { margin-bottom: 0.4em; }
 .trust-logo .tl-name { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; line-height: 1.1; color: var(--navy); display: block; }
 .trust-logo .tl-sub { font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); display: block; }
 .trust-logo.tl-serif .tl-name { font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
-
-/* ===== Fond carte : entrée de l'estuaire de la Loire (aplats) ===== */
-.hero {
-  isolation: isolate;
-  min-height: calc(100vh - 110px);
-  display: flex;
-  align-items: center;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-260 -120 1400 900' preserveAspectRatio='xMidYMid slice'%3E%3Cpath d='M-20,300 C120,240 260,330 380,360 C470,382 540,380 600,400 C700,360 780,330 880,315 C990,300 1080,290 1180,270 C1290,255 1360,235 1420,225 L1420,470 C1320,480 1200,495 1060,520 C940,540 820,570 700,585 C640,590 580,606 520,640 C420,700 320,800 240,920 L-20,920 Z' fill='%230B2545' fill-opacity='0.07'/%3E%3Cg fill='none' stroke='%230B2545' stroke-opacity='0.22' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M-20,300 C120,240 260,330 380,360 C470,382 540,380 600,400 C700,360 780,330 880,315 C990,300 1080,290 1180,270 C1290,255 1360,235 1420,225'/%3E%3Cpath d='M240,920 C320,800 420,700 520,640 C580,606 640,590 700,585 C820,570 940,540 1060,520 C1200,495 1320,480 1420,470'/%3E%3C/g%3E%3Cpath d='M-20,560 C160,540 320,540 480,520 C560,510 610,500 660,500 C800,480 1000,430 1420,340' fill='none' stroke='%230B2545' stroke-opacity='0.06' stroke-width='1.5'/%3E%3Cpath d='M600,415 C625,460 645,520 668,580' fill='none' stroke='%230B2545' stroke-opacity='0.28' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='600' cy='400' r='6' fill='%23E68A3A' fill-opacity='0.55'/%3E%3Ccircle cx='255' cy='328' r='4' fill='%230B2545' fill-opacity='0.18'/%3E%3Ccircle cx='560' cy='618' r='4' fill='%230B2545' fill-opacity='0.18'/%3E%3Ccircle cx='880' cy='315' r='4' fill='%230B2545' fill-opacity='0.18'/%3E%3Ccircle cx='1080' cy='290' r='4' fill='%230B2545' fill-opacity='0.18'/%3E%3Ccircle cx='940' cy='540' r='4' fill='%230B2545' fill-opacity='0.18'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  pointer-events: none;
-}
