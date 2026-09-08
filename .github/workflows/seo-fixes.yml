@@ -1,0 +1,30 @@
+name: Apply SEO fixes
+on:
+  push:
+    branches: [claude/update-website-3ftBv]
+    paths: [tools/apply_seo_fixes.py]
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-liberation
+          pip install --quiet cairosvg pillow
+      - name: Apply fixes
+        run: python3 tools/apply_seo_fixes.py
+      - name: Commit and push
+        run: |
+          rm -f tools/apply_seo_fixes.py .github/workflows/seo-fixes.yml
+          rmdir tools .github/workflows .github 2>/dev/null || true
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+          git add -A
+          git commit -m "SEO : corrections de l'audit technique — og:image PNG, liens morts, sitemap, robots" \
+            -m "og-image.png 1200x630 + 12 héros blog en PNG (aperçus LinkedIn/Facebook/WhatsApp), 12 liens zones-intervention.html corrigés, liens morts du footer vers partenaires/etudes-de-cas/presse (27 pages), sitemap +3 pages orphelines et -mentions-legales (noindex), robots.txt nettoyé, breadcrumb services, ancres mentions légales, suppression PNG orphelins." \
+            -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" \
+            -m "Claude-Session: https://claude.ai/code/session_01FYkK3XDXZknUVnWnZanrU4"
+          git push
