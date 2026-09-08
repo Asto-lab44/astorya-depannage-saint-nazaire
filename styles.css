@@ -1145,3 +1145,19 @@ li { margin-bottom: 0.4em; }
 .sales-cta p.lead-cta{font-family:'Bricolage Grotesque',serif;font-size:1.15rem;color:var(--navy);font-weight:600;margin:0 0 18px;}
 .sales-cta p.fine{font-size:0.85rem;color:var(--muted);margin:14px 0 0;}
 
+
+/* ===== Avis Google ===== */
+.greviews-head { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 34px; }
+.greviews-score { display: flex; align-items: center; gap: 16px; }
+.greviews-score .gr-note { font-family: var(--font-display); font-size: 2.6rem; font-weight: 700; color: var(--navy); line-height: 1; }
+.gr-stars { color: #FBBC04; font-size: 1.15rem; letter-spacing: 2px; }
+.gr-stars .off { color: #D8D1C2; }
+.greviews-score small { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 4px; }
+.greviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.greview { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+.greview-top { display: flex; align-items: center; gap: 12px; }
+.greview-avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 700; flex: none; }
+.greview-top strong { color: var(--navy); font-size: 0.95rem; display: block; }
+.greview-top small { color: var(--muted); font-size: 0.8rem; }
+.greview-glogo { margin-left: auto; width: 20px; height: 20px; flex: none; }
+.greview p { font-size: 0.92rem; color: var(--ink); line-height: 1.55; margin: 0; }
