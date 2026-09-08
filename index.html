@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css?v=20260909a">
+<link rel="stylesheet" href="styles.css?v=20260909b">
 
 <!-- ===== Schema.org LocalBusiness ===== -->
 <script type="application/ld+json">
@@ -235,7 +235,7 @@
     <div>
       <span class="hero-eyebrow"><span class="dot"></span> Équipe disponible — les techniciens sont réveillés 😄</span>
       <h1>Une <span class="highlight">entreprise informatique à Saint-Nazaire</span> qui décroche le téléphone. Si, si. C'est Lucie, essayez&nbsp;!</h1>
-      <p class="lead">Depuis 2010, Astorya dépanne, infogère et cybersécurise les PME du bassin nazairien. Pas de hotline au bout du monde, pas de « avez-vous essayé de redémarrer ? » (bon, parfois — mais c'est vraiment que ça marche). Un technicien local qui arrive sous 4h <span style="font-family:'Caveat',cursive;font-size:1.15rem;color:var(--accent-deep);white-space:normal;">« quand ils sont réveillés et qu'ils n'ont pas les deux pieds dans le même sabot »</span>, et qui trouve votre adresse sans GPS.</p>
+      <p class="lead">Depuis 2010, Astorya dépanne, infogère et cybersécurise les PME du bassin nazairien. Pas de hotline au bout du monde, pas de « avez-vous essayé de redémarrer ? » (bon, parfois — mais c'est vraiment que ça marche). Un technicien local qui arrive sous 4h <span style="font-family:'Caveat',cursive;font-size:1.15rem;color:var(--accent-deep);white-space:normal;">« quand ils sont réveillés et qu'ils n'ont pas les deux pieds dans le même sabot »</span>.</p>
       <ul class="hero-checks">
         <li><span class="tick">✓</span> Appel pris en 15 min (par un humain, pas un robot)</li>
         <li><span class="tick">✓</span> Sur site sous 4h — pont de Saint-Nazaire inclus</li>
@@ -685,7 +685,7 @@
   </div>
 </footer>
 
-<script src="chatbot.js?v=20260909a" defer></script>
+<script src="chatbot.js?v=20260909b" defer></script>
 <script>
 (function(){
   var el = document.getElementById('hero-map');
@@ -723,6 +723,25 @@
       el.appendChild(svg.node());
     })
     .catch(function(){ /* fond décoratif : silence en cas d'échec */ });
+})();
+</script>
+<script>
+(function () {
+  var el = document.querySelector('.hero-eyebrow');
+  if (!el) return;
+  var force = new URLSearchParams(location.search).has('apercu-ferme');
+  var now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Paris' }));
+  var d = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
+  var open = false, msg = '';
+  if (d >= 1 && d <= 4) open = (h >= 8.5 && h < 12.5) || (h >= 14 && h < 18);
+  else if (d === 5) open = (h >= 8.5 && h < 12.5) || (h >= 14 && h < 17);
+  if (open && !force) return;
+  if (d >= 1 && d <= 5 && h >= 12.5 && h < 14) msg = 'retour à 14h 🥪';
+  else if (d >= 1 && d <= 5 && h < 8.5) msg = 'retour à 8h30 ☕';
+  else if (d >= 1 && d <= 3) msg = 'retour demain à 8h30 😴';
+  else msg = 'retour lundi à 8h30 😴';
+  el.classList.add('is-closed');
+  el.innerHTML = '<span class="dot"></span> Équipe indisponible — ' + msg;
 })();
 </script>
 </body>
