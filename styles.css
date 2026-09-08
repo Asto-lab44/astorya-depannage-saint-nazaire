@@ -858,6 +858,39 @@ li { margin-bottom: 0.4em; }
   font-size: 1.18rem;
 }
 
+/* ===== Puces d'accroche sous le lead ===== */
+.lead-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.lead-points li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+.lead-points li::before {
+  content: "✓";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.14);
+  color: #059669;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex: none;
+}
+.hero .lead-points { margin-bottom: 6px; }
+
 /* ===== Two-col content layout ===== */
 .layout-2col {
   display: grid;
