@@ -1297,3 +1297,19 @@ li { margin-bottom: 0.4em; }
 /* ===== Badge disponibilité : état fermé ===== */
 .hero-eyebrow.is-closed .dot { background: #D04545; }
 .hero-eyebrow.is-closed .dot::after { background: #D04545; }
+
+/* ===== Stats en ligne, à droite des boutons du hero ===== */
+.hero-actions { align-items: center; row-gap: 24px; }
+.hero-trust--inline {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  margin-left: auto;
+  gap: 24px;
+  padding-left: 18px;
+}
+.hero-trust--inline strong { font-size: 1.35rem; }
+.hero-trust--inline span { font-size: 0.78rem; }
+@media (max-width: 1100px) {
+  .hero-trust--inline { margin-left: 0; padding-left: 0; width: 100%; }
+}
