@@ -5,7 +5,7 @@ Site statique HTML/CSS/JS (pas de build) déployé sur Vercel via GitHub (`Asto-
 ## Fichiers du site (à déployer)
 - `index.html` + 10 pages (`a-propos`, `contact`, `zones-intervention`, `mentions-legales`, `services/*.html` ×5, `blog/index.html`)
 - `styles.css` — système visuel commun (palette : navy #0B2545, orange #E68A3A, crème #FAF7F2 ; typo Bricolage Grotesque / Manrope / Caveat pour les touches manuscrites)
-- `chatbot.js` — intégration Crisp (WEBSITE_ID inclus)
+- `chatbot.js` — désactivé (l'intégration Crisp est dans l'historique git si besoin)
 - `vercel.json`, `robots.txt`, `sitemap.xml`, `README.md`
 
 ## Ne PAS déployer (fichiers de travail)
