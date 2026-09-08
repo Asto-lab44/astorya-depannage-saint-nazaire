@@ -1172,9 +1172,21 @@ li { margin-bottom: 0.4em; }
   position: absolute;
   inset: 0;
   z-index: -1;
-  opacity: 0.55;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 900' preserveAspectRatio='xMidYMid slice'%3E%3Cg fill='none' stroke='%230B2545' stroke-opacity='0.07' stroke-width='1.5'%3E%3Cpath d='M-20,190 C120,150 210,240 330,205 C450,170 520,260 640,235 C760,210 830,120 980,150 C1130,180 1230,110 1420,140'/%3E%3Cpath d='M-20,420 C90,380 200,470 320,440 C440,410 560,500 680,460 C800,420 900,510 1040,470 C1180,430 1300,500 1420,460'/%3E%3Cpath d='M-20,680 C140,640 260,720 400,690 C540,660 640,740 780,700 C920,660 1060,730 1200,690 C1300,660 1380,700 1420,690'/%3E%3Cpath d='M160,-20 C190,120 130,260 180,400 C230,540 160,680 210,820 C240,880 230,920 240,920'/%3E%3Cpath d='M540,-20 C570,140 500,300 560,440 C620,580 540,720 590,920'/%3E%3Cpath d='M920,-20 C950,130 880,290 940,430 C1000,570 920,710 970,920'/%3E%3Cpath d='M1180,-20 C1220,160 1140,320 1210,480 C1260,610 1190,760 1240,920'/%3E%3Ccircle cx='330' cy='205' r='4' fill='%23E68A3A' fill-opacity='0.35' stroke='none'/%3E%3Ccircle cx='680' cy='460' r='4' fill='%230B2545' fill-opacity='0.18' stroke='none'/%3E%3Ccircle cx='980' cy='150' r='4' fill='%23E68A3A' fill-opacity='0.3' stroke='none'/%3E%3Ccircle cx='400' cy='690' r='4' fill='%230B2545' fill-opacity='0.18' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 900' preserveAspectRatio='xMidYMid slice'%3E%3Cg fill='none' stroke='%230B2545' stroke-opacity='0.35' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M-20,300 C120,240 260,330 380,360 C470,382 540,380 600,400 C700,360 780,330 880,315 C990,300 1080,290 1180,270 C1290,255 1360,235 1420,225'/%3E%3Cpath d='M240,920 C320,800 420,700 520,640 C580,606 640,590 700,585 C820,570 940,540 1060,520 C1200,495 1320,480 1420,470'/%3E%3Cpath d='M600,415 C625,460 645,520 668,580' stroke-width='2.5' stroke-opacity='0.5'/%3E%3Cpath d='M-20,560 C160,540 320,540 480,520 C560,510 610,500 660,500 C800,480 1000,430 1420,340' stroke-width='1.5' stroke-opacity='0.22'/%3E%3Cpath d='M-20,700 C100,670 200,680 260,720 C290,745 300,780 300,830' stroke-width='1.5' stroke-opacity='0.22'/%3E%3C/g%3E%3Ccircle cx='600' cy='400' r='6' fill='%23E68A3A' fill-opacity='0.8'/%3E%3Ccircle cx='255' cy='328' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='560' cy='618' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='880' cy='315' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='1080' cy='290' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='940' cy='540' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
   pointer-events: none;
 }
+
+/* ===== Bandeau « Ils nous font confiance » ===== */
+.trust-band { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 34px 0; }
+.trust-band-inner { display: flex; align-items: center; gap: 28px 44px; flex-wrap: wrap; justify-content: center; }
+.trust-band-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); flex: none; }
+.trust-logos { display: flex; align-items: center; gap: 20px 40px; flex-wrap: wrap; justify-content: center; }
+.trust-logo { display: inline-flex; align-items: center; gap: 10px; filter: grayscale(1); opacity: 0.62; transition: filter .2s, opacity .2s; text-decoration: none; }
+.trust-logo:hover { filter: grayscale(0); opacity: 1; text-decoration: none; }
+.trust-logo svg { width: 26px; height: 26px; flex: none; }
+.trust-logo .tl-name { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; line-height: 1.1; color: var(--navy); display: block; }
+.trust-logo .tl-sub { font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); display: block; }
+.trust-logo.tl-serif .tl-name { font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
