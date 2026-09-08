@@ -1165,19 +1165,6 @@ li { margin-bottom: 0.4em; }
 /* ===== Vignettes blog (image réelle des articles) ===== */
 .post-thumb-img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; border-top-left-radius: 14px; border-top-right-radius: 14px; }
 
-/* ===== Fond carte discret du hero (design Claude Design) ===== */
-.hero { isolation: isolate; }
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: 0.3;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 900' preserveAspectRatio='xMidYMid slice'%3E%3Cg fill='none' stroke='%230B2545' stroke-opacity='0.35' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M-20,300 C120,240 260,330 380,360 C470,382 540,380 600,400 C700,360 780,330 880,315 C990,300 1080,290 1180,270 C1290,255 1360,235 1420,225'/%3E%3Cpath d='M240,920 C320,800 420,700 520,640 C580,606 640,590 700,585 C820,570 940,540 1060,520 C1200,495 1320,480 1420,470'/%3E%3Cpath d='M600,415 C625,460 645,520 668,580' stroke-width='2.5' stroke-opacity='0.5'/%3E%3Cpath d='M-20,560 C160,540 320,540 480,520 C560,510 610,500 660,500 C800,480 1000,430 1420,340' stroke-width='1.5' stroke-opacity='0.22'/%3E%3Cpath d='M-20,700 C100,670 200,680 260,720 C290,745 300,780 300,830' stroke-width='1.5' stroke-opacity='0.22'/%3E%3C/g%3E%3Ccircle cx='600' cy='400' r='6' fill='%23E68A3A' fill-opacity='0.8'/%3E%3Ccircle cx='255' cy='328' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='560' cy='618' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='880' cy='315' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='1080' cy='290' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3Ccircle cx='940' cy='540' r='4.5' fill='%230B2545' fill-opacity='0.4'/%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  pointer-events: none;
-}
 
 /* ===== Bandeau « Ils nous font confiance » ===== */
 .trust-band { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 34px 0; }
