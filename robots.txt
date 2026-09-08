@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /mentions-legales.html
-Disallow: /chatbot.js
 
 # Crawlers IA — autorisés (visibilité dans réponses ChatGPT, Claude, Perplexity, Gemini)
 User-agent: GPTBot

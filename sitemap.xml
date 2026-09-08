@@ -46,6 +46,21 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
+    <loc>https://www.depannage.astorya.fr/etudes-de-cas</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/partenaires</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.depannage.astorya.fr/presse</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://www.depannage.astorya.fr/contact</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
@@ -114,10 +129,5 @@
     <loc>https://www.depannage.astorya.fr/blog/renouveler-parc-informatique-budget</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://www.depannage.astorya.fr/mentions-legales</loc>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
   </url>
 </urlset>
